@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Droplets, ShieldAlert, Waves, Info } from 'lucide-react';
-import EnvironmentInput from '@/components/EnvironmentInput';
-import AnalysisCard from '@/components/AnalysisCard';
+import React, { useState } from "react";
+import { Droplets, ShieldAlert, Waves, Info } from "lucide-react";
+import EnvironmentInput from "@/components/EnvironmentInput";
+import AnalysisCard from "@/components/AnalysisCard";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index = () => {
@@ -22,12 +22,20 @@ const Index = () => {
             <div className="bg-emerald-600 p-1.5 rounded-lg">
               <Waves className="w-5 h-5 text-white" />
             </div>
-            <span className="font-bold text-xl tracking-tight text-slate-900">AquaPurity AI</span>
+            <span className="font-bold text-xl tracking-tight text-slate-900">
+              ENG5097 Group 3: Aqua Purity AR
+            </span>
           </div>
           <nav className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-            <a href="#" className="hover:text-emerald-600 transition-colors">Dashboard</a>
-            <a href="#" className="hover:text-emerald-600 transition-colors">Methodology</a>
-            <a href="#" className="hover:text-emerald-600 transition-colors">About</a>
+            <a href="#" className="hover:text-emerald-600 transition-colors">
+              Dashboard
+            </a>
+            <a href="#" className="hover:text-emerald-600 transition-colors">
+              Methodology
+            </a>
+            <a href="#" className="hover:text-emerald-600 transition-colors">
+              About
+            </a>
           </nav>
         </div>
       </header>
@@ -45,20 +53,22 @@ const Index = () => {
             title="Good Catchment Systems"
             icon={Droplets}
             placeholder={!environment}
-            description={environment 
-              ? `In a ${environment} environment, nature-based solutions like beaver dams and restored wetlands act as natural filters. These systems slow water flow, allowing sediment to settle and biological processes to neutralize pollutants, ensuring high water purity downstream.`
-              : "Enter an environment above to see how nature-based solutions like beaver dams and natural filtration systems maintain water purity."
+            description={
+              environment
+                ? `In a ${environment} environment, nature-based solutions like beaver dams and restored wetlands act as natural filters. These systems slow water flow, allowing sediment to settle and biological processes to neutralize pollutants, ensuring high water purity downstream.`
+                : "Enter an environment above to see how nature-based solutions like beaver dams and natural filtration systems maintain water purity."
             }
           />
-          
+
           <AnalysisCard
             variant="negative"
             title="Bad Catchment Systems"
             icon={ShieldAlert}
             placeholder={!environment}
-            description={environment 
-              ? `Poor catchment in ${environment} often results from deforestation or excessive concrete surfacing. This leads to rapid runoff that bypasses natural filtration, carrying urban pollutants and agricultural chemicals directly into river systems, severely compromising water quality.`
-              : "Analysis of environmental setups that cause poor catchment, such as soil compaction or lack of riparian buffers, will appear here."
+            description={
+              environment
+                ? `Poor catchment in ${environment} often results from deforestation or excessive concrete surfacing. This leads to rapid runoff that bypasses natural filtration, carrying urban pollutants and agricultural chemicals directly into river systems, severely compromising water quality.`
+                : "Analysis of environmental setups that cause poor catchment, such as soil compaction or lack of riparian buffers, will appear here."
             }
           />
         </section>
@@ -72,7 +82,11 @@ const Index = () => {
             <div className="space-y-1">
               <h3 className="font-semibold text-blue-900">How it works</h3>
               <p className="text-blue-800/80 text-sm leading-relaxed">
-                Our AI analyzes the specific topographical and biological characteristics of your chosen environment to determine how water interacts with the landscape. We focus on "catchment efficiency"—the ability of an area to capture, filter, and store water naturally.
+                Our AI analyzes the specific topographical and biological
+                characteristics of your chosen environment to determine how
+                water interacts with the landscape. We focus on "catchment
+                efficiency"—the ability of an area to capture, filter, and store
+                water naturally.
               </p>
             </div>
           </section>
@@ -80,7 +94,9 @@ const Index = () => {
       </main>
 
       <footer className="mt-auto py-8 border-t bg-white">
-        <MadeWithDyad />
+        <div className="content-center text-gray-700 font-thin content text-center">
+          A Group 3 Project
+        </div>
       </footer>
     </div>
   );
