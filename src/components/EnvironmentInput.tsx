@@ -22,21 +22,21 @@ const EnvironmentInput = ({ onSubmit }: EnvironmentInputProps) => {
   return (
     <div className="w-full max-w-2xl mx-auto space-y-4">
       <div className="text-center space-y-2 mb-8">
-        <div className="inline-flex items-center justify-center p-3 bg-emerald-100 rounded-2xl mb-2">
-          <TreePine className="w-6 h-6 text-emerald-600" />
+        <div className="inline-flex items-center justify-center p-3 bg-emerald-900 rounded-2xl mb-2">
+          <TreePine className="w-6 h-6 text-emerald-400" />
         </div>
-        <h2 className="text-3xl font-bold tracking-tight text-slate-900">River Health Analysis</h2>
-        <p className="text-slate-500">Enter an environment to explore its hydrological impact and nature-based solutions.</p>
+        <h2 className="text-3xl font-bold tracking-tight text-white">River Health Analysis</h2>
+        <p className="text-slate-400">Enter an environment to explore its hydrological impact and nature-based solutions.</p>
       </div>
       
       <form onSubmit={handleSubmit} className="relative group">
         <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-          <Search className="h-5 w-5 text-slate-400 group-focus-within:text-emerald-500 transition-colors" />
+          <Search className="h-5 w-5 text-slate-500 group-focus-within:text-emerald-400 transition-colors" />
         </div>
         <Input
           type="text"
           placeholder="What environment would you like to see? (e.g. Alpine Tundra, Tropical Rainforest)"
-          className="pl-12 pr-32 py-7 text-lg rounded-2xl border-slate-200 shadow-sm focus-visible:ring-emerald-500 transition-all"
+          className="pl-12 pr-32 py-7 text-lg rounded-2xl bg-slate-800 border-slate-700 text-white placeholder:text-slate-500 focus-visible:ring-emerald-500 transition-all"
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
