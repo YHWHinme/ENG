@@ -1,1 +1,1 @@
-# Welcome to your Dyad app
+# Vibe coded template
